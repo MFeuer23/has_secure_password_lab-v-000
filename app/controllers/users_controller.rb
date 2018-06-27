@@ -16,6 +16,9 @@ class UsersController < ApplicationController
     if @user.save
       session[:user_id] = @user.id
       redirect_to "/users/#{@user.id}"
+    else
+      redirect_to "/users/signup"
+    end
   end
  
   private
