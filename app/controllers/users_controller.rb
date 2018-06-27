@@ -6,7 +6,7 @@ class UsersController < ApplicationController
   def create
   end
   
-  def home
+  def show
   end
   
 end
