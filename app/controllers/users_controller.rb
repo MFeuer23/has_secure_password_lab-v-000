@@ -12,6 +12,7 @@ class UsersController < ApplicationController
   
    def create
     user = User.new(user_params).save
+    redirect_to "/users/show"
   end
  
   private
